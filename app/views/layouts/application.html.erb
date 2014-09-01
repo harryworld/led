@@ -47,6 +47,9 @@
     <p class="alert"><%= alert %></p>
 
     <div>
+      <% if isAdmin? %>
+        <h1>I'm Admin!</h1>
+      <% end %>
 
     <%= yield %>
 

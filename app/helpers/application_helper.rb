@@ -6,4 +6,8 @@ module ApplicationHelper
       link_to link_text, link_path, class_attributes
     end
   end
+
+  def isAdmin?
+    current_user.email == 'harry@ga.co' unless current_user.blank?
+  end
 end
